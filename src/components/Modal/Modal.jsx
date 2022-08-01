@@ -2,6 +2,8 @@
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 
+const modalRoot = document.querySelector('#modal-root');
+
 export const Modal = ({ showModal, toggleModal, modalImgUrl }) => {
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
